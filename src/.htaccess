@@ -1,0 +1,12 @@
+<IfModule mod_rewrite.c>
+# Redirect all insecure requests
+RewriteCond %{HTTPS} !=on
+RewriteRule ^/?(.*) https://%{SERVER_NAME}/$1 [R=301,L]
+</IfModule>
+<ifmodule mod_deflate.c>
+AddOutputFilterByType DEFLATE text/text text/html text/plain text/xml text/css application/x-javascript application/javascript text/javascript
+</ifmodule>
+
+# tell web browsers not to even try HTTP on this domain for the next year
+# uncomment this only after you've confirmed your site is working on HTTPS, since it commits you to providing it over HTTPS
+Header set Strict-Transport-Security "max-age=31536000" env=HTTPS
