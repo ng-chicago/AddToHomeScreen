@@ -27,34 +27,35 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
 
-## Creation notes 05/18/2018 2:19 PM
+## Creation steps
 
-### create
-    ng new BaseAngular6-PWA --routing
-    cd BaseAngular6-PWA
+### Create new app with CLI
+    ng new BaseAngular6-PWA --routing  
+    cd BaseAngular6-PWA  
 
 ### Add PWA stuff
-    ng add @angular/pwa
+    ng add @angular/pwa  
 
-### Make sure it's up to date
+### Make sure it's up to date (double check)
     ng update
 
-### Modify distribution folder in angular.json (personal pref)
-	old: "outputPath": "dist/BaseAngular6-PWA",
-	new: "outputPath": "dist",
+### Modify distribution folder in _angular.json_ (personal preference)
+	old: "outputPath": "dist/BaseAngular6-PWA",  
+	new: "outputPath": "dist",  
 
-### Added noscript to index.html page for lighthouse score
-    Right before closing </body>
-    <noscript>JavaScript required to view site</noscript>
+## Bump up the Lighthouse score tweaks
 
-### Added meta data description to index.html page (lighthouse score)
-	<meta name="description" content="Base Angular 6 PWA">
-  	<meta name="keywords" content="Angular, PWA">
+### Add noscript tag to _index.html_ page before closing body tag
+        <noscript>JavaScript required to view site</noscript>  
 
-### Added .htaccess file to root for HTTPS force (lighthouse score)
-	https://gist.github.com/ng-chicago/8eeb71f749134983a83b8752a9a29905
+### Add description meta data to _index.html_ page
+        <meta name="description" content="Base Angular 6 PWA">  
+        <meta name="keywords" content="Angular, PWA">  
 
-### Modified angular.json to include .htaccess file in build (lighthouse score)
+### Add .htaccess file to root for HTTPS redirect  
+[Gist File](https://gist.github.com/ng-chicago/8eeb71f749134983a83b8752a9a29905){:target="_blank"}
+
+### Modify _angular.json_ to include new .htaccess file in build  
 	"assets": [
               "src/favicon.ico",
               "src/assets",
@@ -62,21 +63,23 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
               "src/.htaccess"
             ],
 
-### Updated manifest.json short_name (lighthouse score)
-	  "short_name": "Very Short",
+### Update _manifest.json_ short_name
+    "short_name": "Very Short",  
 
 ### Build Deploy & Audit Check
-    ng build --prod --build-optimizer
-    cd dist
-    Push entire folder with tool of your choice to your website
+    ng build --prod --build-optimizer  
+    cd dist  
+    Push the entire folder with the tool of your choice to your website  
+    Run Chrome Audit to see score
 
 ### Push to GitHub
-    git add -A
-    git commit -m "creation"
-    git remote add origin https://github.com/ng-chicago/AngularBasePWA.git
-    git push -u origin master
+    git status  
+    git add -A  
+    git commit -m "base app creation"  
+    git remote add origin https://github.com/ng-chicago/AngularBasePWA.git  
+    git push -u origin master  
 
-### Other Notes
-    My host does not offer HTTP2 - So dinged on Best Practices
-    Some browser Extensions may slow down things and lower scores
-        (turn them all off while testing)
+### Other Notes {#almost} 
+    My host does not offer HTTP2 - So I was dinged on the Best Practices number 
+    Some browser Extensions will slow down things and lower scores  
+        (turn them all off while testing)   
