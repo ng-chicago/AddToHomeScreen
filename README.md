@@ -53,7 +53,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
         <meta name="keywords" content="Angular, PWA">  
 
 ### Add .htaccess file to root for HTTPS redirect  
-[Gist File](https://gist.github.com/ng-chicago/8eeb71f749134983a83b8752a9a29905){:target="_blank"}
+[Gist File](https://gist.github.com/ng-chicago/8eeb71f749134983a83b8752a9a29905)  
 
 ### Modify _angular.json_ to include new .htaccess file in build  
 	"assets": [
@@ -79,7 +79,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
     git remote add origin https://github.com/ng-chicago/AngularBasePWA.git  
     git push -u origin master  
 
-### Other Notes {#almost} 
+### Other Notes  
     My host does not offer HTTP2 - So I was dinged on the Best Practices number 
     Some browser Extensions will slow down things and lower scores  
         (turn them all off while testing)   
