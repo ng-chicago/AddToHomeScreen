@@ -79,7 +79,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
     git remote add origin https://github.com/ng-chicago/AngularBasePWA.git  
     git push -u origin master  
 
-### Other Notes  
+### Notes  
     My host does not offer HTTP2 - So I was dinged on the Best Practices number 
     Some browser Extensions will slow down things and lower scores  
         (turn them all off while testing)   
