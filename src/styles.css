@@ -1,1 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+
+@media all and (display-mode: standalone) {
+  body {
+    background-color: yellow;
+    border: 1px solid black;
+  }
+}

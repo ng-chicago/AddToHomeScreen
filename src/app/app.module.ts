@@ -5,10 +5,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+import { A2hsComponent } from './a2hs/a2hs.component';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    A2hsComponent
   ],
   imports: [
     BrowserModule,
