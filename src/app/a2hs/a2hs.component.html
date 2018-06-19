@@ -2,13 +2,14 @@
         [style.display]="getStyle(buttonShown)"
         (click)="addToHomeScreen()">Add To Home Screen</button>
 <div class="debugSection">
-  <h4>Mobile Debug (Chrome & Edge Only)</h4>
+  <h4>Debug<br>--Mobile Chrome & Edge Only<br>--Desktop Chrome</h4>
   <ul style="list-style: none;">
     <li>Prompt Intercepted: <span [style.color]="trueOrFalse(promptIntercepted)">{{ promptIntercepted }}</span></li>
     <li>Deferred Prompt Saved: <span [style.color]="trueOrFalse(promptSaved)">{{ promptSaved }}</span></li>
     <li>Custom Button Clicked: <span [style.color]="trueOrFalse(customButtonClicked)">{{ customButtonClicked }}</span></li>
     <li>Deferred Prompt Shown: <span [style.color]="trueOrFalse(deferredPromptShown)">{{ deferredPromptShown }}</span></li>
-    <li>Added 2 Home Screen: <span [style.color]="trueOrFalse(UserInstalled)">{{ UserInstalled }}</span></li>
+    <li>App or Shortcut Added: <span [style.color]="trueOrFalse(UserInstalled)">{{ UserInstalled }}</span></li>
   </ul>
 </div>
+<a href="https://github.com/ng-chicago/AddToHomeScreen/blob/master/README.md" target="_blank">How To Use</a>
 <h4 [style.display]="getStyle(showLoadedAsStandalone)">Running As Standalone</h4>
