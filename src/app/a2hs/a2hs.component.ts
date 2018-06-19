@@ -11,7 +11,7 @@ export class A2hsComponent  implements OnInit  {
 
   buttonShown: boolean;
   showLoadedAsStandalone: boolean;
-  promptIntercepted: boolean;
+  promptIntercepted = false;
   customButtonClicked = false;
   deferredPrompt;
   promptSaved = false;
@@ -50,7 +50,7 @@ export class A2hsComponent  implements OnInit  {
       // no matter what, the snack-bar shows in 68 (06/16/2018 11:05 AM)
       e.preventDefault();
 
-      // Stash the event so it can be displayed later.
+      // Stash the event so it can be displayed when the user wants.
       this.deferredPrompt = e;
       this.promptSaved = true;
 
@@ -102,6 +102,14 @@ export class A2hsComponent  implements OnInit  {
       return 'block';
     } else {
       return 'none';
+    }
+  }
+
+  trueOrFalse(checkWhat: boolean) {
+    if (checkWhat) {
+      return 'green';
+    } else {
+      return 'red';
     }
   }
 

@@ -2,16 +2,13 @@
         [style.display]="getStyle(buttonShown)"
         (click)="addToHomeScreen()">Add To Home Screen</button>
 <div class="debugSection">
-  <h4>Mobile Debug</h4>
-  Prompt Intercepted:  {{ promptIntercepted }}
-  <br>
-  Deferred Prompt Saved:  {{ promptSaved }}
-  <br>
-  Custom Button Clicked:  {{ customButtonClicked }}
-  <br>
-  Deferred Prompt Shown:  {{ deferredPromptShown }}
-  <br>
-  User accepted the A2HS prompt: {{ UserInstalled }}
-  <br>
+  <h4>Mobile Debug (Chrome & Edge Only)</h4>
+  <ul style="list-style: none;">
+    <li>Prompt Intercepted: <span [style.color]="trueOrFalse(promptIntercepted)">{{ promptIntercepted }}</span></li>
+    <li>Deferred Prompt Saved: <span [style.color]="trueOrFalse(promptSaved)">{{ promptSaved }}</span></li>
+    <li>Custom Button Clicked: <span [style.color]="trueOrFalse(customButtonClicked)">{{ customButtonClicked }}</span></li>
+    <li>Deferred Prompt Shown: <span [style.color]="trueOrFalse(deferredPromptShown)">{{ deferredPromptShown }}</span></li>
+    <li>Added 2 Home Screen: <span [style.color]="trueOrFalse(UserInstalled)">{{ UserInstalled }}</span></li>
+  </ul>
 </div>
 <h4 [style.display]="getStyle(showLoadedAsStandalone)">Running As Standalone</h4>
