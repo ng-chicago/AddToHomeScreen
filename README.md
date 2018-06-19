@@ -19,8 +19,5 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
  * Settings > Clear private data > check all (all time) > CLEAR DATA 
  
  ## How It Use (Desktop Chrome)
-  * UNINSTALL any previous apps (chrome://apps/)
- [Chrome://apps/](chrome://apps/){:target="_blank"}
+  * UNINSTALL any previous installs - go to (chrome://apps/) in your browser
  
-
-
