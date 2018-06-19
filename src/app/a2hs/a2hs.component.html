@@ -1,17 +1,17 @@
 <button type="button"
-        [style.display]="getStyle(showButton)"
+        [style.display]="getStyle(buttonShown)"
         (click)="addToHomeScreen()">Add To Home Screen</button>
 <div class="debugSection">
-  <h4>Chrome Mobile Debug</h4>
+  <h4>Mobile Debug</h4>
   Prompt Intercepted:  {{ promptIntercepted }}
   <br>
   Deferred Prompt Saved:  {{ promptSaved }}
   <br>
-  Button Clicked:  {{ buttonClicked }}
+  Custom Button Clicked:  {{ customButtonClicked }}
   <br>
   Deferred Prompt Shown:  {{ deferredPromptShown }}
   <br>
-  User accepted the A2HS prompt: {{ UserAcceptedA2HS }}
+  User accepted the A2HS prompt: {{ UserInstalled }}
   <br>
 </div>
-<h4 [style.display]="getStyle(showLoadedAsStandalone)">Running As Chrome Standalone</h4>
+<h4 [style.display]="getStyle(showLoadedAsStandalone)">Running As Standalone</h4>
