@@ -4,7 +4,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## How It Use (All)
  * To truly test this, you will need to build and deploy this to your own HTTPs server and then use a browser on a mobile device OR Chrome Desktop.  
- * I MAY have a version running at my test server https://Mathi.us
+ * I have a version (6/20/18) running at https://a2hs.glitch.me/
 
 ## How It Use (Mobile Chrome Android)
  * UNINSTALL any previous WebAPK apps for your PWA
