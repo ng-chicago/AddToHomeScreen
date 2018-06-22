@@ -1,17 +1,25 @@
-<button type="button"
-        [style.display]="getStyle(buttonShown)"
-        (click)="addToHomeScreen()">Add To Home Screen</button>
+<div [style.display]="a2hs.showHideButton()">
+  <button class="btn-a2hs"
+          type="button"
+          (click)="a2hs.addToHomeScreen()">Add Shortcut To Home/Apps Screen</button>
+</div>
+<div [style.display]="a2hs.showHide(a2hs.standalone)">
+  <strong>Running As Standalone</strong>
+</div>
 
-<div class="debugSection" [style.display]="getStyle(promptIntercepted)">
+<br><br><br>
+<div class="debugSection" [style.display]="a2hs.showHide(a2hs.promptSaved)">
   <h4>Debug<br>--Mobile Chrome & Edge Only<br>--Desktop Chrome</h4>
   <ul style="list-style: none;">
-    <li>Prompt Intercepted: <span [style.color]="trueOrFalse(promptIntercepted)">{{ promptIntercepted }}</span></li>
-    <li>Deferred Prompt Saved: <span [style.color]="trueOrFalse(promptSaved)">{{ promptSaved }}</span></li>
-    <li>Custom Button Clicked: <span [style.color]="trueOrFalse(customButtonClicked)">{{ customButtonClicked }}</span></li>
-    <li>Deferred Prompt Shown: <span [style.color]="trueOrFalse(deferredPromptShown)">{{ deferredPromptShown }}</span></li>
-    <li>App or Shortcut Added: <span [style.color]="trueOrFalse(UserInstalled)">{{ UserInstalled }}</span></li>
+    <li>Prompt Intercepted: <span [style.color]="a2hs.trueOrFalse(a2hs.promptIntercepted)">{{ a2hs.promptIntercepted }}</span></li>
+
+    <li>Deferred Prompt Saved: <span [style.color]="a2hs.trueOrFalse(a2hs.promptSaved)">{{ a2hs.promptSaved }}</span></li>
+    <li>Custom Button Clicked: <span [style.color]="a2hs.trueOrFalse(a2hs.customButtonClicked)">{{ a2hs.customButtonClicked }}</span></li>
+    <li>Deferred Prompt Shown: <span [style.color]="a2hs.trueOrFalse(a2hs.deferredPromptShown)">{{ a2hs.deferredPromptShown }}</span></li>
+    <li>Deferred Prompt Rejected: <span [style.color]="a2hs.trueOrFalse(a2hs.deferredPromptRejected)">{{ a2hs.deferredPromptRejected }}</span></li>
+    <li>App or Shortcut Added: <span [style.color]="a2hs.trueOrFalse(a2hs.userInstalled)">{{ a2hs.userInstalled }}</span></li>
   </ul>
 </div>
 
-<a href="https://github.com/ng-chicago/AddToHomeScreen/blob/master/README.md" target="_blank">How To Use</a>
-<h4 [style.display]="getStyle(showLoadedAsStandalone)">Running As Standalone</h4>
+<br><br><br>
+<a href="https://ng-chicago.github.io/2018/06/18/add-2-home-screen/" target="_blank">About</a>

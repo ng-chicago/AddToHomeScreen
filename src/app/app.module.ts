@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+import { A2hsService } from './a2hs.service';
 import { A2hsComponent } from './a2hs/a2hs.component';
 
 
@@ -18,7 +19,7 @@ import { A2hsComponent } from './a2hs/a2hs.component';
     AppRoutingModule,
     ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production })
   ],
-  providers: [],
+  providers: [A2hsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
