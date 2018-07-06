@@ -1,13 +1,11 @@
-<div [style.display]="a2hs.showHideButton()">
-  <button class="btn-a2hs"
-          type="button"
-          (click)="a2hs.addToHomeScreen()">Add Shortcut To Home/Apps Screen</button>
-</div>
-<div [style.display]="a2hs.showHide(a2hs.standalone)">
-  <strong>Running As Standalone</strong>
+<app-a2hs-browser-prompt [style.display]="a2hs.browserPromptBtn()"></app-a2hs-browser-prompt>
+<app-ios-safari-how2 [style.display]="a2hs.iOSSafariHow2()"></app-ios-safari-how2>
+
+<div [style.display]="a2hs.showHide(a2hs.isStandalone)">
+  <strong>Standalone - Show User Nothing</strong>
 </div>
 
-<br><br><br>
+<br>
 <div class="debugSection" [style.display]="a2hs.showHide(a2hs.promptSaved)">
   <h4>Debug<br>--Mobile Chrome & Edge Only<br>--Desktop Chrome</h4>
   <ul style="list-style: none;">
@@ -20,6 +18,26 @@
     <li>App or Shortcut Added: <span [style.color]="a2hs.trueOrFalse(a2hs.userInstalled)">{{ a2hs.userInstalled }}</span></li>
   </ul>
 </div>
+<br>
+<div>
+  <h4>Debug<br>--UserAgent</h4>
+  <ul style="list-style: none;">
+    <li>isChrome: <span [style.color]="a2hs.trueOrFalse(a2hs.isChrome)">{{a2hs.isChrome}}</span></li>
+    <li>isExplorer: <span [style.color]="a2hs.trueOrFalse(a2hs.isExplorer)">{{a2hs.isExplorer}}</span></li>
+    <li>isExplorer_11: <span [style.color]="a2hs.trueOrFalse(a2hs.isExplorer_11)">{{a2hs.isExplorer_11}}</span></li>
+    <li>isFirefox: <span [style.color]="a2hs.trueOrFalse(a2hs.isFirefox)">{{a2hs.isFirefox}}</span></li>
+    <li>isSafari: <span [style.color]="a2hs.trueOrFalse(a2hs.isSafari)">{{a2hs.isSafari}}</span></li>
+    <li>isOpera: <span [style.color]="a2hs.trueOrFalse(a2hs.isOpera)">{{a2hs.isOpera}}</span></li>
+    <li>isEdgeDesktop: <span [style.color]="a2hs.trueOrFalse(a2hs.isEdgeDesktop)">{{a2hs.isEdgeDesktop}}</span></li>
+    <li>isEdgeiOS: <span [style.color]="a2hs.trueOrFalse(a2hs.isEdgeiOS)">{{a2hs.isEdgeiOS}}</span></li>
+    <li>isEdgeAndroid: <span [style.color]="a2hs.trueOrFalse(a2hs.isEdgeAndroid)">{{a2hs.isEdgeAndroid}}</span></li>
 
-<br><br><br>
+    <li>isIOS: <span [style.color]="a2hs.trueOrFalse(a2hs.isIOS)">{{a2hs.isIOS}}</span></li>
+    <li>isMobile: <span [style.color]="a2hs.trueOrFalse(a2hs.isMobile)">{{a2hs.isMobile}}</span></li>
+
+  </ul>
+</div>
+{{a2hs.userAgent}}
+
+<br>
 <a href="https://ng-chicago.github.io/2018/06/18/add-2-home-screen/" target="_blank">About</a>

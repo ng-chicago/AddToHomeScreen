@@ -12,6 +12,7 @@ export class AppComponent {
   constructor(public a2hs: A2hsService) {
 
     // A2HS - START
+    a2hs.checkUserAgent();
     a2hs.trackStandalone();
     window.addEventListener('beforeinstallprompt', (e) => {
 

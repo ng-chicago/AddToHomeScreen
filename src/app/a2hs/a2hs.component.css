@@ -3,20 +3,3 @@
   visibility: visible;
   /*visibility: hidden;*/
 }
-.nav-link {
-  background-color: #d2d2d2;
-}
-.btn-a2hs {
-
-  font-size: 75%;
-  font-weight: 700;
-  white-space: normal;
-}
-.nav-link, .btn-a2hs{
-  border: 1px solid rgba(0,0,0,.5);
-  padding: 10px 5px 10px 5px;
-  margin-bottom: 10px;
-  border-radius: .25rem;
-  background-color: #ffc107;
-}
-
