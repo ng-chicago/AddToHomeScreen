@@ -35,7 +35,14 @@
         "/assets/icons/touch-icon-ipad-retina.png",
         "/assets/icons/touch-icon-ipad.png",
         "/assets/icons/touch-icon-iphone-retina.png",
-        "/assets/icons/touch-icon-iphone.png"
+        "/assets/icons/touch-icon-iphone.png",
+        "/assets/splash/apple_splash_1125.png",
+        "/assets/splash/apple_splash_1242.png",
+        "/assets/splash/apple_splash_1536.png",
+        "/assets/splash/apple_splash_1668.png",
+        "/assets/splash/apple_splash_2048.png",
+        "/assets/splash/apple_splash_640.png",
+        "/assets/splash/apple_splash_750.png"
       ],
       "patterns": []
     }
@@ -57,8 +64,15 @@
     "/assets/icons/touch-icon-ipad.png": "8bf1cd5435113392c230ad0cf7ec6ab7fba9af22",
     "/assets/icons/touch-icon-iphone-retina.png": "04c1df45de075ae75a8526c829af04a9209210de",
     "/assets/icons/touch-icon-iphone.png": "b1318d87678dfc48c2631b270138420b8edd6cbf",
+    "/assets/splash/apple_splash_1125.png": "1ea4f3eb0adb95c01a5fe92ba17a148f383e87c8",
+    "/assets/splash/apple_splash_1242.png": "4241411b3d5bdcd10c88a8623fee4ce05672d90f",
+    "/assets/splash/apple_splash_1536.png": "5ebbf07f1c80a96f8202620734ad4517fddc8080",
+    "/assets/splash/apple_splash_1668.png": "09920f981914a5ea7f65d4cb8668d026f558e99c",
+    "/assets/splash/apple_splash_2048.png": "658ac175fdab44a62c4901db4b7525dff340da9f",
+    "/assets/splash/apple_splash_640.png": "05034819bdac7b6267f2ca311be8daa648b8fa7d",
+    "/assets/splash/apple_splash_750.png": "f067cc92f0be6e1244a3869920420ddbdda92c26",
     "/favicon.ico": "84161b857f5c547e3699ddfbffc6d8d737542e01",
-    "/index.html": "400e5fc5990c76447afaaa45a30f240f20373465",
+    "/index.html": "5de36e25e817815b0ec3b716559a057676823171",
     "/main.726eb99e03e9ae3a58c2.js": "d4d0d1265f937714e831ba5c31986f6726a2df39",
     "/polyfills.b4daf421c94934f530d4.js": "193f6d7b77c2bce633da2f543082303b4f32d7ed",
     "/runtime.a66f828dca56eeb90e02.js": "078e320cc6fdaf355836c3b1c52b059cdd33fc7e",
